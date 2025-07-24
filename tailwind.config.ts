@@ -1,5 +1,9 @@
 import type { Config } from "tailwindcss";
 
+type addVariantType = {
+  addVariant: (value1: string, value2: string) => void;
+};
+
 const config: Config = {
   darkMode: ["class", "class"],
   content: [
@@ -9,6 +13,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      spacing: {
+        "2.75": "11px",
+        "3.75": "15px",
+        "0.75": "3px",
+        "7.5": "30px",
+        "50": "100px",
+        "19.5": "78px",
+        "8.75": "35px",
+        "38.25": "135px",
+        "23.25": "93px",
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
@@ -80,6 +95,7 @@ const config: Config = {
         light: {
           "200": "#F5F6F9",
           "300": "#F8F8F8",
+          "400": "#E0E0E0",
           DEFAULT: "#FFFFFF",
         },
         neutral: {
@@ -112,19 +128,28 @@ const config: Config = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        default: "20px",
+        "30": "30px",
+        "9": "9px",
+        "13": "13px",
       },
       container: {
         center: true,
         padding: {
           DEFAULT: "1rem",
-          sm: "2rem",
-          lg: "4rem",
-          xl: "5rem",
-          "2xl": "6rem",
+          // sm: "2rem",
+          lg: "6.25rem",
+          xl: "6.75rem",
         },
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    function ({ addVariant }: addVariantType) {
+      addVariant("child", "& > *");
+      addVariant("child-hover", "& > *:hover");
+    },
+  ],
 };
 export default config;

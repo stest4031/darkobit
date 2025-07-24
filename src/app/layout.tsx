@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Index as Header } from "@/components/modules/layout/Index";
+import { SVGIcons } from "@/components/modules/SVGIcons";
 
 const peydaFont = localFont({
   variable: "--font-peyda",
@@ -109,11 +111,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fa" dir="rtl">
       <body
-        className={`${peydaFont.variable} ${yekanBakhFont.variable} antialiased`}
+        className={`bg-light ${peydaFont.variable} ${yekanBakhFont.variable} antialiased `}
       >
-        {children}
+        <Header>
+          {children}
+          <SVGIcons />
+        </Header>
       </body>
     </html>
   );
