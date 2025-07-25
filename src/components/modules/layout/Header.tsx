@@ -93,13 +93,13 @@ export const Header = () => {
             </li>
           </ul>
           <div>
-            <div className="flex items-center">
+            <div className=" flex items-center font-yekanbakh">
               <div className="flex items-center">
                 <div>
                   <p className="font-medium text-base text-neutral-800">
                     021-45697871
                   </p>
-                  <p className="font-yekanbakh font-medium text-sm-mines ">
+                  <p className=" font-medium text-sm-mines ">
                     <span className="text-primary-700">پشتیبانی</span> 24 ساعته
                   </p>
                 </div>
@@ -109,7 +109,7 @@ export const Header = () => {
               </div>
               <div className="flex items-center gap-2 mr-3.25">
                 <div className="flex items-center gap-0.5 px-2.5 py-2 bg-light-500 rounded-20">
-                  <p className="px-1 bg-light-600/20 text-base text-neutral-500 rounded-full">
+                  <p className="flex items-center justify-center size-4 pt-0.5 px-1 bg-light-600/20 text-base text-neutral-500 rounded-full">
                     0
                   </p>
                   <svg className="size-5">
@@ -117,7 +117,9 @@ export const Header = () => {
                   </svg>
                 </div>
                 <div className="flex items-center gap-4 px-6 py-2.25 bg-dark-400 rounded-20">
-                  <p className="bg-light/20 text-white rounded-full px-1">0</p>
+                  <p className="flex items-center justify-center size-4 pt-0.5 bg-light/20 text-white rounded-full px-1">
+                    0
+                  </p>
                   <svg className="size-6">
                     <use href="#shop"></use>
                   </svg>
