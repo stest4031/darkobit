@@ -124,6 +124,26 @@ export const SVGIcons = () => {
           d="M10.25 6.683V5.599a3.25 3.25 0 0 1 6.5 0v1.084"
         ></path>
       </symbol>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        id="chevron-down2"
+        fill="none"
+        viewBox="0 0 42 38"
+      >
+        <path
+          stroke="#000"
+          strokeLinecap="round"
+          strokeOpacity="0.5"
+          strokeWidth="2.387"
+          d="m31.144 12.868-8.95 6.317c-.66.466-1.73.466-2.39 0l-8.95-6.317"
+        ></path>
+        <path
+          stroke="#000"
+          strokeLinecap="round"
+          strokeWidth="2.387"
+          d="m31.144 21.223-8.95 6.317c-.66.466-1.73.466-2.39 0l-8.95-6.317"
+        ></path>
+      </svg>
     </svg>
   );
 };
