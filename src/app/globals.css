@@ -68,6 +68,11 @@
   * {
     @apply border-border;
   }
+  @layer components {
+    .header__nav {
+      @apply flex items-center gap-2.75 py-1.5 pr-3 pl-5 hover:bg-primary-default text-neutral-600 hover:text-dark rounded-13 transition-all duration-150;
+    }
+  }
   body {
     @apply bg-background text-foreground;
   }

@@ -14,7 +14,9 @@ const config: Config = {
   theme: {
     extend: {
       spacing: {
+        "2.25": "9px",
         "2.75": "11px",
+        "3.25": "13px",
         "3.75": "15px",
         "0.75": "3px",
         "7.5": "30px",
@@ -96,6 +98,8 @@ const config: Config = {
           "200": "#F5F6F9",
           "300": "#F8F8F8",
           "400": "#E0E0E0",
+          "500": "#F0F0F0",
+          "600": "#898989",
           DEFAULT: "#FFFFFF",
         },
         neutral: {
@@ -106,6 +110,7 @@ const config: Config = {
           "500": "#8D8D8D",
           "600": "#3A3A3A",
           "700": "#434343",
+          "800": "#303030",
           "900": "#181A20",
           DEFAULT: "#2D2D2A",
         },
@@ -129,18 +134,20 @@ const config: Config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
         default: "20px",
-        "30": "30px",
         "9": "9px",
         "13": "13px",
+        "20": "20px",
+        "30": "30px",
       },
       container: {
         center: true,
         padding: {
-          DEFAULT: "1rem",
-          // sm: "2rem",
-          lg: "6.25rem",
-          xl: "6.75rem",
+          DEFAULT: "1.25rem",
+          lg: "1.75rem",
         },
+      },
+      fontSize: {
+        "sm-mines": "0.8125rem",
       },
     },
   },

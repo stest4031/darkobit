@@ -13,102 +13,120 @@ export const Header = () => {
     console.log("header1");
   }
   return (
-    <header className="container bg-light-200">
-      <div className="flex items-center justify-between py-7.5">
-        <div className="flex items-center">
-          <div className="w-19.5 h-19.5">
-            <Image
-              src={"/images/darkobit-logo.svg"}
-              width={"78"}
-              height={"78"}
-              className="w-full h-full"
-              alt="لوگو"
-            />
-          </div>
-
-          <div className="mt-3.5 mr-2.5 text-right">
-            <div className="w-38.25 h-8.75">
+    <header className=" bg-light-200">
+      <div className="container">
+        <div className=" flex items-center justify-between py-7.5">
+          <div className="flex items-center">
+            <div className="w-19.5 h-19.5">
               <Image
-                src={"/images/logo.svg"}
+                src={"/images/darkobit-logo.svg"}
                 width={"78"}
                 height={"78"}
                 className="w-full h-full"
                 alt="لوگو"
               />
             </div>
-            <p className="mt-0.75 mr-1 font-peyda font-bold text-neutral-400">
-              مرجع دانلود فایل
-            </p>
+
+            <div className="mt-3.5 mr-2.5 text-right">
+              <div className="w-38.25 h-8.75">
+                <Image
+                  src={"/images/logo.svg"}
+                  width={"78"}
+                  height={"78"}
+                  className="w-full h-full"
+                  alt="لوگو"
+                />
+              </div>
+              <p className="mt-0.75 mr-1 font-peyda font-bold text-neutral-400">
+                مرجع دانلود فایل
+              </p>
+            </div>
+          </div>
+          <div className="flex items-center gap-1 ">
+            <Button className="w-20 h-11 pb-3 bg-light hover:bg-light-200 text-neutral-700 border border-light-400 rounded-default">
+              ورود
+            </Button>
+            <Button className="w-23.25 h-11 pb-3 bg-secondary-default hover:bg-secondary-default/90  rounded-default">
+              ثبت نام
+            </Button>
           </div>
         </div>
-        <div className="flex items-center gap-1 ">
-          <Button className="w-20 h-11 pb-3 bg-light hover:bg-light-200 text-neutral-700 border border-light-400 rounded-default">
-            ورود
-          </Button>
-          <Button className="w-23.25 h-11 pb-3 bg-secondary-default hover:bg-secondary-default/90  rounded-default">
-            ثبت نام
-          </Button>
-        </div>
+        <nav className=" flex items-center justify-between mt-7.5 px-4 py-2.5 bg-light rounded-30">
+          <ul className="flex items-center gap-3.75 font-peyda font-medium child:cursor-pointer">
+            <li className="header__nav text-dark">
+              <Button className=" rounded-9 w-8 h-8">
+                <svg className="w-5 h-5 text-white shrink-0">
+                  <use href="#heart"></use>
+                </svg>
+              </Button>
+              <p className="text-dark">پرفروش ترین</p>
+              <svg className="w-4 h-4 mt-1 text-dark">
+                <use href="#chevron-down"></use>
+              </svg>
+            </li>
+            <li className="header__nav">
+              <svg className="w-5 h-5 text-neutral-600 hover:text-dark shrink-0">
+                <use href="#wordpress"></use>
+              </svg>
+              <p>قالب وردپرس</p>
+              <svg className="w-4 h-4 mt-1 ">
+                <use href="#chevron-down"></use>
+              </svg>
+            </li>
+            <li className="header__nav">
+              <svg className="w-5 h-5 text-neutral-600 hover:text-dark shrink-0">
+                <use href="#puzzle-piece"></use>
+              </svg>
+              <p>افزونه وردپرس</p>
+              <svg className="w-4 h-4 mt-1 ">
+                <use href="#chevron-down"></use>
+              </svg>
+            </li>
+            <li className="header__nav">
+              <svg className="w-5 h-5 text-neutral-600 hover:text-dark shrink-0">
+                <use href="#squares-2x2"></use>
+              </svg>
+              <p>خدمات</p>
+              <svg className="w-4 h-4 mt-1 ">
+                <use href="#chevron-down"></use>
+              </svg>
+            </li>
+          </ul>
+          <div>
+            <div className="flex items-center">
+              <div className="flex items-center">
+                <div>
+                  <p className="font-medium text-base text-neutral-800">
+                    021-45697871
+                  </p>
+                  <p className="font-yekanbakh font-medium text-sm-mines ">
+                    <span className="text-primary-700">پشتیبانی</span> 24 ساعته
+                  </p>
+                </div>
+                <svg className="size-5 mr-2">
+                  <use href="#phone"></use>
+                </svg>
+              </div>
+              <div className="flex items-center gap-2 mr-3.25">
+                <div className="flex items-center gap-0.5 px-2.5 py-2 bg-light-500 rounded-20">
+                  <p className="px-1 bg-light-600/20 text-base text-neutral-500 rounded-full">
+                    0
+                  </p>
+                  <svg className="size-5">
+                    <use href="#bookmark"></use>
+                  </svg>
+                </div>
+                <div className="flex items-center gap-4 px-6 py-2.25 bg-dark-400 rounded-20">
+                  <p className="bg-light/20 text-white rounded-full px-1">0</p>
+                  <svg className="size-6">
+                    <use href="#shop"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
       </div>
-      <nav className="mt-7.5 px-4 py-2.5 bg-light rounded-30">
-        <ul className="flex items-center gap-3.75 font-peyda font-medium child:cursor-pointer">
-          <li className="flex items-center gap-2.75 py-1.5 pr-3 pl-5 hover:bg-primary-default rounded-13 transition-all duration-150">
-            <Button className=" rounded-9 w-8 h-8">
-              <svg className="w-5 h-5 text-white shrink-0">
-                <use href="#heart"></use>
-              </svg>
-            </Button>
-            <p className="text-dark">پرفروش ترین</p>
-            <svg className="w-4 h-4 mt-1 text-dark">
-              <use href="#chevron-down"></use>
-            </svg>
-          </li>
-          <li className="flex items-center gap-2.75 py-1.5 pr-3 pl-5 hover:bg-primary-default rounded-13 transition-all duration-150">
-            <Button className=" rounded-9 w-8 h-8">
-              <svg className="w-5 h-5 text-white shrink-0">
-                <use href="#heart"></use>
-              </svg>
-            </Button>
-            <p className="text-dark">پرفروش ترین</p>
-            <svg className="w-4 h-4 mt-1 text-dark">
-              <use href="#chevron-down"></use>
-            </svg>
-          </li>
-          <li className="flex items-center gap-2.75 py-1.5 pr-3 pl-5 hover:bg-primary-default rounded-13 transition-all duration-150">
-            <Button className=" rounded-9 w-8 h-8">
-              <svg className="w-5 h-5 text-white shrink-0">
-                <use href="#heart"></use>
-              </svg>
-            </Button>
-            <p className="text-dark">پرفروش ترین</p>
-            <svg className="w-4 h-4 mt-1 text-dark">
-              <use href="#chevron-down"></use>
-            </svg>
-          </li>
-          <li className="flex items-center gap-2.75 py-1.5 pr-3 pl-5 hover:bg-primary-default rounded-13 transition-all duration-150">
-            <Button className=" rounded-9 w-8 h-8">
-              <svg className="w-5 h-5 text-white shrink-0">
-                <use href="#heart"></use>
-              </svg>
-            </Button>
-            <p className="text-dark">پرفروش ترین</p>
-            <svg className="w-4 h-4 mt-1 text-dark">
-              <use href="#chevron-down"></use>
-            </svg>
-          </li>
-          <li className="flex items-center gap-2.75 py-1.5 pr-3 pl-5 hover:bg-primary-default rounded-13 transition-all duration-150">
-            <Button className=" rounded-9 w-8 h-8">
-              <svg className="w-5 h-5 text-white shrink-0">
-                <use href="#heart"></use>
-              </svg>
-            </Button>
-            <p className="text-dark">پرفروش ترین</p>
-            <svg className="w-4 h-4 mt-1 text-dark">
-              <use href="#chevron-down"></use>
-            </svg>
-          </li>
-        </ul>
-      </nav>
     </header>
   );
 };
