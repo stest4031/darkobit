@@ -51,7 +51,7 @@ export const Header = () => {
             </Button>
           </div>
         </div>
-        <nav className="hidden lg:inline-flex items-center justify-between mt-7.5 px-4 py-2.5 bg-light rounded-30">
+        <nav className="hidden lg:flex items-center justify-between mt-7.5 px-4 py-2.5 bg-light rounded-30">
           <ul className="flex items-center gap-2 xl:gap-3.75 font-peyda font-medium child:cursor-pointer">
             <li className="header__nav text-dark">
               <Button className=" rounded-9 w-8 h-8">
