@@ -14,6 +14,7 @@ const config: Config = {
   theme: {
     extend: {
       spacing: {
+        "1.75": "7px",
         "2.25": "9px",
         "2.75": "11px",
         "3.25": "13px",
@@ -102,6 +103,7 @@ const config: Config = {
           "200": "#F5F6F9",
           "300": "#F8F8F8",
           "400": "#E0E0E0",
+          "450": "#D2D2D2",
           "500": "#F0F0F0",
           "600": "#898989",
           DEFAULT: "#FFFFFF",
@@ -140,6 +142,7 @@ const config: Config = {
         default: "20px",
         "9": "9px",
         "13": "13px",
+        "15": "15px",
         "20": "20px",
         "30": "30px",
       },

@@ -124,7 +124,7 @@ export const SVGIcons = () => {
           d="M10.25 6.683V5.599a3.25 3.25 0 0 1 6.5 0v1.084"
         ></path>
       </symbol>
-      <svg
+      <symbol
         xmlns="http://www.w3.org/2000/svg"
         id="chevron-down2"
         fill="none"
@@ -143,7 +143,29 @@ export const SVGIcons = () => {
           strokeWidth="2.387"
           d="m31.144 21.223-8.95 6.317c-.66.466-1.73.466-2.39 0l-8.95-6.317"
         ></path>
-      </svg>
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        id="magnifying"
+        fill="none"
+        viewBox="0 0 17 18"
+      >
+        <path
+          fill="#000"
+          stroke="#fff"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="3"
+          d="M7.74 14.037a6.005 6.005 0 1 0 0-12.01 6.005 6.005 0 0 0 0 12.01"
+        ></path>
+        <path
+          stroke="#fff"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="3"
+          d="m15.246 15.538-3.266-3.265"
+        ></path>
+      </symbol>
     </svg>
   );
 };
