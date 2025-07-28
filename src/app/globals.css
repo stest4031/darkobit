@@ -6,6 +6,9 @@
   .text-balance {
     text-wrap: balance;
   }
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
 }
 
 @layer base {
@@ -71,12 +74,12 @@
   * {
     @apply border-border;
   }
-  @layer components {
-    .header__nav {
-      @apply flex items-center gap-2.75 py-1.5 pr-1 xl:pr-3 pl-3 xl:pl-5 hover:bg-primary-default md:text-sm xl:text-base text-neutral-600 dark:text-neutral-150 hover:dark:text-dark hover:text-dark rounded-13 transition-all duration-150;
-    }
-  }
   body {
     @apply bg-background text-foreground;
+  }
+}
+@layer components {
+  .header__nav {
+    @apply flex items-center gap-2.75 py-1.5 pr-1 xl:pr-3 pl-3 xl:pl-5 hover:bg-primary-default md:text-sm xl:text-base text-neutral-600 dark:text-neutral-150 hover:dark:text-dark hover:text-dark rounded-13 transition-all duration-150;
   }
 }
