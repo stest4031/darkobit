@@ -14,7 +14,7 @@ export const Header = () => {
   }
   return (
     <header className=" bg-light  sm:bg-light-200 sm:dark:bg-dark-300">
-      <div className="container hidden lg:inline-block">
+      <div className="container hidden lg:block">
         <div className=" flex items-center justify-between py-2.5 lg:py-7.5">
           <div className="flex items-center">
             <div className="w-10 lg:w-19.5 h-10 lg:h-19.5">
