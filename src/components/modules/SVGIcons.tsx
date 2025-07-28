@@ -185,6 +185,16 @@ export const SVGIcons = () => {
           d="M16.74 11h1.08"
         ></path>
       </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        id="bars"
+        fill="none"
+        viewBox="0 0 23 20"
+      >
+        <g stroke="#B7B7B7" strokeLinecap="round" strokeWidth="3" opacity="0.8">
+          <path d="M2 2.144h18.808M2 10.231h18.871M2 18.32h18.871"></path>
+        </g>
+      </symbol>
     </svg>
   );
 };

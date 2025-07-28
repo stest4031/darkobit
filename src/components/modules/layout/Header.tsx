@@ -14,7 +14,7 @@ export const Header = () => {
   }
   return (
     <header className=" bg-light sm:bg-light-200">
-      <div className="container">
+      <div className="container hidden lg:inline-block">
         <div className=" flex items-center justify-between py-2.5 lg:py-7.5">
           <div className="flex items-center">
             <div className="w-10 lg:w-19.5 h-10 lg:h-19.5">
@@ -128,6 +128,30 @@ export const Header = () => {
             </div>
           </div>
         </nav>
+      </div>
+      {/* mobile */}
+      <div className="inline-flex items-center justify-between w-full lg:hidden h-[78px] px-[19px] shadow-md">
+        <div>
+          <Image
+            src={"/images/darkobitLogo.svg"}
+            alt="عکس لوگو سایت دارکو بیت"
+            width={143}
+            height={43}
+          />
+        </div>
+        <div className="flex items-center gap-5">
+          <div className="flex items-center gap-2.5 px-2.25 py-1.5 bg-dark-400 rounded-20">
+            <p className="flex items-center justify-center size-4 pt-0.5 bg-light/20 text-white rounded-full px-1">
+              0
+            </p>
+            <svg className="size-6">
+              <use href="#shop"></use>
+            </svg>
+          </div>
+          <svg className="size-5">
+            <use href="#bars"></use>
+          </svg>
+        </div>
       </div>
     </header>
   );
