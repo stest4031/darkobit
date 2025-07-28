@@ -18,7 +18,7 @@ export const HeroSection = () => {
           alt="عکس فروشگاه دارک مود"
           width={1024}
           height={566}
-          className="hidden sm:inline-block dark:inline-block w-full h-full"
+          className="hidden sm:dark:inline-block dark:inline-block w-full h-full"
         />
         <Image
           src="/images/baner-mobile.png"
@@ -33,7 +33,7 @@ export const HeroSection = () => {
           alt="بنر موبایل - دارک مود"
           width={1024}
           height={566}
-          className="hidden sm:hidden dark:block w-full h-full"
+          className="hidden sm:hidden dark:inline-block sm:dark:hidden w-full h-full"
         />
         <div className="absolute top-[43px] sm:top-[120px] xl:top-28 w-full">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 dark:gap-0 dark:sm:gap-6 xl:gap-7.25 w-full font-peyda font-bold text-xl ">
