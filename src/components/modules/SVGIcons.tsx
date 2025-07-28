@@ -80,7 +80,7 @@ export const SVGIcons = () => {
         viewBox="0 0 20 21"
       >
         <path
-          fill="#464255"
+          fill="currentColor"
           d="M7.258 8.191a.83.83 0 0 0 .242-.592V4.266a.833.833 0 0 0-.833-.833H3.333a.833.833 0 0 0-.833.833 14.167 14.167 0 0 0 14.167 14.167.833.833 0 0 0 .833-.834v-3.333a.833.833 0 0 0-.833-.833h-3.334a.83.83 0 0 0-.591.241l-1.667 1.667-.058.075a12.6 12.6 0 0 1-5.5-5.5l.075-.058zm6.417 6.908h2.158v1.667a12.5 12.5 0 0 1-3.166-.633zm-8.85-6.833a12.5 12.5 0 0 1-.658-3.167h1.666v2.159z"
         ></path>
       </symbol>
@@ -142,6 +142,26 @@ export const SVGIcons = () => {
           strokeLinecap="round"
           strokeWidth="2.387"
           d="m31.144 21.223-8.95 6.317c-.66.466-1.73.466-2.39 0l-8.95-6.317"
+        ></path>
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        id="chevron-down2-yellow"
+        fill="none"
+        viewBox="0 0 42 38"
+      >
+        <path
+          stroke="#FFE351"
+          strokeLinecap="round"
+          strokeOpacity="0.58"
+          strokeWidth="2.387"
+          d="m31.144 12.436-8.95 6.317c-.66.466-1.73.466-2.39 0l-8.95-6.318"
+        ></path>
+        <path
+          stroke="#FFE351"
+          strokeLinecap="round"
+          strokeWidth="2.387"
+          d="m31.144 20.79-8.95 6.317c-.66.466-1.73.466-2.39 0l-8.95-6.317"
         ></path>
       </symbol>
       <symbol

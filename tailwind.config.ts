@@ -5,7 +5,7 @@ type addVariantType = {
 };
 
 const config: Config = {
-  darkMode: ["class", "class"],
+  darkMode: "class",
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -110,6 +110,7 @@ const config: Config = {
         },
         neutral: {
           "100": "#BBBBBB",
+          "150": "#D9D9D9",
           "200": "#535160",
           "300": "#9C9C96",
           "400": "#717171",

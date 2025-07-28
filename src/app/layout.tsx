@@ -111,9 +111,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa" dir="rtl">
+    <html lang="fa" dir="rtl" className="dark">
       <body
-        className={`bg-light ${peydaFont.variable} ${yekanBakhFont.variable} antialiased `}
+        className={`bg-light dark:bg-dark-200 ${peydaFont.variable} ${yekanBakhFont.variable} antialiased `}
       >
         <Header>
           {children}

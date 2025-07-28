@@ -13,7 +13,7 @@ export const Header = () => {
     console.log("header1");
   }
   return (
-    <header className=" bg-light sm:bg-light-200">
+    <header className=" bg-light  sm:bg-light-200 sm:dark:bg-dark-300">
       <div className="container hidden lg:inline-block">
         <div className=" flex items-center justify-between py-2.5 lg:py-7.5">
           <div className="flex items-center">
@@ -46,26 +46,28 @@ export const Header = () => {
             <Button className="w-16 lg:w-20 h-9 lg:h-11 bg-light hover:bg-light-200 text-neutral-700 border border-light-400 rounded-default">
               ورود
             </Button>
-            <Button className="hidden sm:inline-block w-16 lg:w-20 h-9 lg:h-11 bg-secondary-default hover:bg-secondary-default/90  rounded-default">
+            <Button className="hidden sm:inline-block w-16 lg:w-20 h-9 lg:h-11 bg-secondary-default hover:bg-secondary-default/90 dark:text-light rounded-default">
               ثبت نام
             </Button>
           </div>
         </div>
-        <nav className="hidden lg:flex items-center justify-between mt-7.5 px-4 py-2.5 bg-light rounded-30">
+        <nav className="hidden lg:flex items-center justify-between px-4 py-2.5 bg-light dark:bg-dark-500 rounded-30">
           <ul className="flex items-center gap-2 xl:gap-3.75 font-peyda font-medium child:cursor-pointer">
-            <li className="header__nav text-dark">
-              <Button className=" rounded-9 w-8 h-8">
-                <svg className="w-5 h-5 text-white shrink-0">
+            <li className="header__nav group text-dark">
+              <Button className=" rounded-9 w-8 h-8 dark:bg-black">
+                <svg className="w-5 h-5 text-white hover:text-dark shrink-0">
                   <use href="#heart"></use>
                 </svg>
               </Button>
-              <p className="text-dark">پرفروش ترین</p>
-              <svg className="w-4 h-4 mt-1 text-dark">
+              <p className="text-dark dark:text-light group-hover:dark:text-dark">
+                پرفروش ترین
+              </p>
+              <svg className="w-4 h-4 mt-1 text-dark dark:text-light group-hover:dark:text-dark">
                 <use href="#chevron-down"></use>
               </svg>
             </li>
-            <li className="header__nav">
-              <svg className="w-5 h-5 text-neutral-600 hover:text-dark shrink-0">
+            <li className="header__nav group">
+              <svg className="w-5 h-5 text-neutral-600 dark:text-neutral-150 dark:group-hover:text-dark hover:text-dark shrink-0">
                 <use href="#wordpress"></use>
               </svg>
               <p>قالب وردپرس</p>
@@ -73,8 +75,8 @@ export const Header = () => {
                 <use href="#chevron-down"></use>
               </svg>
             </li>
-            <li className="header__nav">
-              <svg className="w-5 h-5 text-neutral-600 hover:text-dark shrink-0">
+            <li className="header__nav group">
+              <svg className="w-5 h-5 text-neutral-600 dark:text-neutral-150 dark:group-hover:text-dark hover:text-dark shrink-0">
                 <use href="#puzzle-piece"></use>
               </svg>
               <p>افزونه وردپرس</p>
@@ -82,8 +84,8 @@ export const Header = () => {
                 <use href="#chevron-down"></use>
               </svg>
             </li>
-            <li className="header__nav">
-              <svg className="w-5 h-5 text-neutral-600 hover:text-dark shrink-0">
+            <li className="header__nav group">
+              <svg className="w-5 h-5 text-neutral-600 dark:text-neutral-150 dark:group-hover:text-dark hover:text-dark shrink-0">
                 <use href="#squares-2x2"></use>
               </svg>
               <p>خدمات</p>
@@ -96,19 +98,19 @@ export const Header = () => {
             <div className=" flex items-center font-yekanbakh">
               <div className="flex items-center">
                 <div>
-                  <p className="font-medium text-base text-neutral-800">
+                  <p className="font-medium text-base text-neutral-800 dark:text-neutral-150">
                     021-45697871
                   </p>
                   <p className=" font-medium text-sm-mines ">
                     <span className="text-primary-700">پشتیبانی</span> 24 ساعته
                   </p>
                 </div>
-                <svg className="size-5 mr-2">
+                <svg className="size-5 mr-2 text-neutral-800 dark:text-light">
                   <use href="#phone"></use>
                 </svg>
               </div>
               <div className="flex items-center gap-2 mr-3.25">
-                <div className="flex items-center gap-0.5 px-2.5 py-2 bg-light-500 rounded-20">
+                <div className="flex items-center gap-0.5 px-2.5 py-2 bg-light-500 dark:bg-dark-300 rounded-20">
                   <p className="flex items-center justify-center size-4 pt-0.5 px-1 bg-light-600/20 text-base text-neutral-500 rounded-full">
                     0
                   </p>
@@ -116,7 +118,7 @@ export const Header = () => {
                     <use href="#bookmark"></use>
                   </svg>
                 </div>
-                <div className="flex items-center gap-4 px-3 xl:px-6 py-2.25 bg-dark-400 rounded-20">
+                <div className="flex items-center gap-4 px-3 xl:px-6 py-2.25 bg-dark-400 dark:bg-dark-300 rounded-20">
                   <p className="flex items-center justify-center size-4 pt-0.5 bg-light/20 text-white rounded-full px-1">
                     0
                   </p>
