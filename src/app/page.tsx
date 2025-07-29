@@ -1,3 +1,4 @@
+import { DiscountedProducts } from "@/components/templates/home/DiscountedProducts";
 import { HeroSection } from "@/components/templates/home/HeroSection";
 import { LatestProducts } from "@/components/templates/home/LatestProducts";
 
@@ -7,6 +8,7 @@ export default function Home() {
       <HeroSection />
       {/* <SubscriptionBanner /> */}
       <LatestProducts />
+      <DiscountedProducts />
     </main>
   );
 }

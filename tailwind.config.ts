@@ -145,6 +145,7 @@ const config: Config = {
         "9": "9px",
         "13": "13px",
         "15": "15px",
+        "18": "18px",
         "20": "20px",
         "30": "30px",
         "48": "48px",
@@ -157,9 +158,15 @@ const config: Config = {
         },
       },
       fontSize: {
+        "xs-mines": "0.6875srem",
         "sm-mines": "0.8125rem",
         "base-mines": "0.9375rem",
+        "3x-mines": "1.75rem",
         "5.5xl": "3.1875rem",
+      },
+      backgroundImage: {
+        "discountBG-mobile": "url(/images/discount-bg-mobile.svg)",
+        "discountBG-desktop": "url(/images/discount-bg-desktop.svg)",
       },
     },
     screens: {
