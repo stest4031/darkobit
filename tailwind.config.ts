@@ -1,9 +1,10 @@
+import tailwindcssAnimate from "tailwindcss-animate";
+
 import type { Config } from "tailwindcss";
 
 type addVariantType = {
   addVariant: (value1: string, value2: string) => void;
 };
-
 const config: Config = {
   darkMode: "class",
   content: [
@@ -146,6 +147,7 @@ const config: Config = {
         "15": "15px",
         "20": "20px",
         "30": "30px",
+        "48": "48px",
       },
       container: {
         center: true,
@@ -156,6 +158,7 @@ const config: Config = {
       },
       fontSize: {
         "sm-mines": "0.8125rem",
+        "base-mines": "0.9375rem",
         "5.5xl": "3.1875rem",
       },
     },
@@ -166,11 +169,11 @@ const config: Config = {
       lg: "1024px",
       xl: "1280px",
 
-      "2xl": "1536px",
+      // "2xl": "1536px",
     },
   },
   plugins: [
-    require("tailwindcss-animate"),
+    tailwindcssAnimate,
     function ({ addVariant }: addVariantType) {
       addVariant("child", "& > *");
       addVariant("child-hover", "& > *:hover");

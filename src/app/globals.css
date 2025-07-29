@@ -67,10 +67,8 @@
   }
   body {
     font-family: var(--font-yekanbakh);
+    font-weight: normal;
   }
-}
-
-@layer base {
   * {
     @apply border-border;
   }

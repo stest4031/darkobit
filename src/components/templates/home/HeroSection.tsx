@@ -18,7 +18,7 @@ export const HeroSection = () => {
           alt="عکس فروشگاه دارک مود"
           width={1024}
           height={566}
-          className="hidden sm:dark:inline-block dark:inline-block w-full h-full"
+          className="hidden lg:dark:inline-block dark:inline-block w-full h-full"
         />
         <Image
           src="/images/baner-mobile.png"

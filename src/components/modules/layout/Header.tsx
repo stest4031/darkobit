@@ -122,7 +122,7 @@ export const Header = () => {
                   <p className="flex items-center justify-center size-4 pt-0.5 bg-light/20 text-white rounded-full px-1">
                     0
                   </p>
-                  <svg className="size-6">
+                  <svg className="size-6 text-light">
                     <use href="#shop"></use>
                   </svg>
                 </div>
