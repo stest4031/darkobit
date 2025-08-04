@@ -15,6 +15,7 @@ const config: Config = {
   theme: {
     extend: {
       spacing: {
+        "1.25": "5px",
         "1.75": "7px",
         "2.25": "9px",
         "2.75": "11px",
@@ -142,12 +143,17 @@ const config: Config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
         default: "20px",
+        "10": "10px",
         "9": "9px",
         "13": "13px",
+        "14": "14px",
         "15": "15px",
         "18": "18px",
         "20": "20px",
+        "28": "28px",
         "30": "30px",
+        "32": "32px",
+        "40": "40px",
         "48": "48px",
       },
       container: {
@@ -158,15 +164,22 @@ const config: Config = {
         },
       },
       fontSize: {
-        "xs-mines": "0.6875srem",
+        small: "0.4375rem",
+        "xs-mines": "0.6875rem",
         "sm-mines": "0.8125rem",
         "base-mines": "0.9375rem",
         "3x-mines": "1.75rem",
+        "4x-mines": "2.125rem",
         "5.5xl": "3.1875rem",
       },
       backgroundImage: {
         "discountBG-mobile": "url(/images/discount-bg-mobile.svg)",
+        "discountBG-desktop-dark": "url(/images/discount-bg-desktop-dark.svg)",
         "discountBG-desktop": "url(/images/discount-bg-desktop.svg)",
+        "discountBG-mobile-dark": "url(/images/discount-bg-mobile-dark.svg)",
+      },
+      backdropBlur: {
+        "20": "20px",
       },
     },
     screens: {
@@ -175,7 +188,6 @@ const config: Config = {
       md: "768px",
       lg: "1024px",
       xl: "1280px",
-
       // "2xl": "1536px",
     },
   },
